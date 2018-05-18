@@ -44,8 +44,13 @@ let biz_content = {
     subject: '订单标题',
     body: "商品描述"
 }
-//result为移动端需要给支付宝的数据
-let result = await alipay.getAppParam(biz_content)
+try{
+    //result为移动端需要给支付宝的数据
+    let result = await alipay.getAppParam(biz_content)
+}catch(err){
+    //err
+}
+
 ```
 
 #### <span id=12>回调处理(verifySign)</span>
@@ -192,7 +197,7 @@ const unionpayJson = {
     certId: "742461010**"
 };
 
-const pay = require('./index')('unionpay');
+const pay = require('china-pay')('unionpay');
 //unionpayJson key 必传
 const unionpay = new pay(unionpayJson, key)
 ```
