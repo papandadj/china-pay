@@ -1,0 +1,32 @@
+{
+  "name": "china-pay",
+  "version": "1.0.0",
+  "description": "银联 微信 支付宝 支付",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alipay",
+    "wxpay",
+    "unionpay",
+    "pay",
+    "支付宝",
+    "银联",
+    "微信支付"
+  ],
+  "author": {
+    "email": "papandadj@gmail.com",
+    "name": "papandadj"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papandadj/china-pay.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "iconv-lite": "^0.4.23",
+    "silly-datetime": "^0.1.2",
+    "xml2js": "^0.4.19"
+  }
+}
