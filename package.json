@@ -1,6 +1,6 @@
 {
   "name": "china-pay",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "银联 微信 支付宝 支付",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,11 @@
     "wxpay",
     "unionpay",
     "pay",
-    "支付宝",
-    "银联",
-    "微信支付"
+    "支付宝支付",
+    "银联支付",
+    "微信支付",
+    "app支付",
+    "支付"
   ],
   "author": {
     "email": "papandadj@gmail.com",
