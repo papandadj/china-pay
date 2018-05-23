@@ -16,10 +16,9 @@
 [设置私钥](https://docs.open.alipay.com/291/106130)
 [将上面生成的私钥生成无密码的私钥](https://rafpe.ninja/2016/08/17/openssl-convert-rsa-key-to-private-key/)
 
-
 ## Importing
 ```js
-const privatePem = fs.readFileSync('private_key.pem');
+const privatePem = fs.readFileSync('private_key.pem');//该私钥为无密码的私钥
 const publicPem = fs.readFileSync('public_key.pem');
 const alipayJson = {
     app_id: '',  //应用ID
@@ -58,6 +57,7 @@ try{
 try{
     //obj 为支付宝返回的body对象里面的内容
     let result = await alipay.verifySign(obj)
+    //res.send("success");如果成功
 }catch(err){
     //认证失败
 }
