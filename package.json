@@ -1,6 +1,6 @@
 {
   "name": "china-pay",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "银联 微信 支付宝 支付",
   "main": "index.js",
   "scripts": {
