@@ -93,6 +93,7 @@ const wxpayJson = {
 };
 const key = {
     key:'',//邮箱里
+    pfxPath:''//微信证书提现时使用
 }
 const pay = require('china-pay')('wxpay');
 //alipayJson， key 必传
@@ -150,7 +151,19 @@ try{
 // res.set('Content-Type', 'text/xml');
 // res.send("SUCCESS")
 ```
-
+#### <span id=24>提现(transfers)</span>
+```js
+    obj = {}
+    obj.openid = ''
+    obj.partner_trade_no = '23234234234'
+    obj.desc='test'
+    obj.amount = 100;
+    try{
+        await wxpay.transfers(obj)
+    }catch(err){
+        //失败抛出异常
+    }
+```
 # <span id=3>银联支付 </span>
 #### [获取tn](#31)
 #### [回调处理](#32)
